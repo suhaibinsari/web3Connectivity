@@ -1,0 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('../public/4238895.jpg');
+    background-size: cover ;
+    height: 100vh;
+    /* background-position: top; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    font-family: 'Griffy', sans-serif;
+  }
