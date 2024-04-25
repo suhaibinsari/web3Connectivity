@@ -40,7 +40,7 @@ const Card = () => {
 
           <div className="space-y-1 relative">
             <p className="">Amount in <span className="font-bold">BNB</span> You Pay:</p>
-            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] text-black p-2 pr-10" />
+            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] p-2 pr-10" />
             <hr className="absolute rotate-90 right-0 flex items-center pr-7 mr-7 border-t-0.5  border-gray-300" style={{ bottom: '19px' }} />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pt-6">
               <Image src={usd} alt="Image" className="h-5 w-5" width={500} height={500} />
@@ -48,7 +48,7 @@ const Card = () => {
           </div>
           <div className="space-y-1 relative">
             <p className="">Amount in <span className="font-bold">BOO</span> You Receive:</p>
-            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] text-black p-2 pr-10" />
+            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] p-2 pr-10" />
             <hr className="absolute rotate-90 right-0 flex items-center pr-7 mr-7 border-t-0.5  border-gray-300" style={{ bottom: '19px' }} />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pt-6">
               <Image src={logo} alt="Image" className="h-5 w-5" width={500} height={500} />

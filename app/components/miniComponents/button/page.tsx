@@ -11,10 +11,9 @@ interface ButtonProps {
   children?: React.ReactNode;
   img?: string | StaticImageData;
   link?: string;
-  hover?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link, hover  }) => {
+const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link  }) => {
   console.log('aaaa' ,hover)
   const buttonContent = (
     <>
