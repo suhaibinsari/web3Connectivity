@@ -26,8 +26,8 @@ const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgr
     </>
   );
 
-  return link ? (
-    <Link href={link} passHref>
+  return (
+    <Link href={link || '/'}  passHref>
       <button
         className="text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2"
         style={{ width, height, backgroundColor }}
@@ -36,15 +36,7 @@ const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgr
         {buttonContent}
       </button>
     </Link>
-  ) : (
-    <button
-      className="text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2"
-      style={{ width, height, backgroundColor }}
-      onClick={onClick}
-    >
-      {buttonContent}
-    </button>
-  );
+  )
 };
 
 export default Button;
