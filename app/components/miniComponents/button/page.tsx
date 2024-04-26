@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgr
   return link ? (
     <Link href={link} passHref>
       <button
-        className={`text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2 bg-${hover}-500`}
+        className="text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2"
         style={{ width, height, backgroundColor }}
         onClick={onClick}
       >
