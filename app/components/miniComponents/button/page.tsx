@@ -16,9 +16,7 @@ interface ButtonProps {
 export default function Button({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link }: ButtonProps) {
   const buttonContent = (
     <div className='flex items-center justify-center gap-2'>
-
       {img && <Image src={img} alt="no-img" width={24} height={24} className='filter brightness-0 invert' />}
-
       {text}
       {children}
     </div>
@@ -36,4 +34,3 @@ export default function Button({ width = 'auto', height = 'auto', backgroundColo
     </Link>
   )
 };
-
