@@ -15,7 +15,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link  }) => {
   const buttonContent = (
-    <>
+    <div className='flex items-center justify-center gap-2'>
       {typeof img === 'string' ? (
         <Image src={img} alt="no-img" width={24} height={24} className='filter brightness-0 invert' />
       ) : (
@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgr
       )}
       {text}
       {children}
-    </>
+    </div>
   );
 
   return (
