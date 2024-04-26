@@ -13,21 +13,19 @@ interface ButtonProps {
   link?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link  }) => {
+export default function Button({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link }: ButtonProps) {
   const buttonContent = (
     <div className='flex items-center justify-center gap-2'>
-      {typeof img === 'string' ? (
-        <Image src={img} alt="no-img" width={24} height={24} className='filter brightness-0 invert' />
-      ) : (
-        img && <Image src={img} alt="no-img" width={24} height={24} className='filter brightness-0 invert' />
-      )}
+
+      {img && <Image src={img} alt="no-img" width={24} height={24} className='filter brightness-0 invert' />}
+
       {text}
       {children}
     </div>
   );
 
   return (
-    <Link href={link || '/'}  passHref>
+    <Link href={link || '/'} passHref>
       <button
         className="text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2"
         style={{ width, height, backgroundColor }}
@@ -39,4 +37,3 @@ const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgr
   )
 };
 
-export default Button;
