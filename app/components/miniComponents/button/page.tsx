@@ -14,7 +14,6 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link  }) => {
-  console.log('aaaa' ,hover)
   const buttonContent = (
     <>
       {typeof img === 'string' ? (
