@@ -45,7 +45,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
                             <span style={{ '--value': timeRemaining.days } as any}></span>
                         </span>
                     </div>
-                    <div className="text-gray-400">Hours</div>
+                    <div className="text-gray-400">Days</div>
                 </div>
                 <div className="text-center">
                     <div className="text-4xl font-bold">

@@ -1,19 +1,27 @@
+import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 interface ButtonProps {
-  width?: string;
-  height?: string;
-  backgroundColor?: string;
   onClick?: () => void;
   text?: string;
   children?: React.ReactNode;
-  img?: string | StaticImageData;
-  link?: string;
+  img?: string | StaticImageData ;
+  width?: string | number;
+  height?: string | number;
+  backgroundColor?: string;
 }
 
-export default function Button({ width = 'auto', height = 'auto', backgroundColor = 'gray', onClick, text, children, img, link }: ButtonProps) {
+const Button: React.FC<ButtonProps> = ({
+  width = 'auto',
+  height = 'auto',
+  backgroundColor = 'gray',
+  onClick,
+  text,
+  children,
+  img,
+
+}) => {
   const buttonContent = (
     <div className='flex items-center justify-center gap-2'>
       {img && <Image src={img} alt="no-img" width={24} height={24} className='filter brightness-0 invert' />}
@@ -23,7 +31,6 @@ export default function Button({ width = 'auto', height = 'auto', backgroundColo
   );
 
   return (
-    <Link href={link || '/'} passHref>
       <button
         className="text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2"
         style={{ width, height, backgroundColor }}
@@ -31,6 +38,7 @@ export default function Button({ width = 'auto', height = 'auto', backgroundColo
       >
         {buttonContent}
       </button>
-    </Link>
   )
 };
+
+export default Button;

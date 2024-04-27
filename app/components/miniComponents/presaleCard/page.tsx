@@ -20,8 +20,21 @@ const Card = () => {
       <div className='border bg-gray-400 flex flex-col items-center justify-center font-Crafty bg-opacity-25 rounded-3xl w-full max-w-[30rem] py-10'>
         <div className='flex flex-col items-center justify-center space-y-4'>
           <h2 className='text-3xl font-bold'>BOO COIN</h2>
+
+
+
+          <progress
+            id="file"
+            style={{
+              width: "99.71%",
+              marginTop: "1px",
+              marginLeft: "1px",
+            }}
+          >
+          </progress>
+
           <p>Phase 1 Ends In:</p>
-          <Countdown targetDate={targetDate} />
+          <p><Countdown targetDate={targetDate} /></p>
           <div className='text-center'>
             <p>USD Raised = $0.0 / $500000</p>
             <p>Minimum purchase = 5000 INCO</p>
@@ -29,7 +42,7 @@ const Card = () => {
             <p>Listing price: TBD</p>
           </div>
           <div className='flex gap-6'>
-            <Button img={bnb} text="BNB" backgroundColor="#F3B43B" width="150px" height="50px" hover='pink' />
+            <Button img={bnb} text="BNB" backgroundColor="#F3B43B" width="150px" height="50px" />
             <Button img={usd} text="USDT" backgroundColor="#26A17B" width="150px" height="50px" />
           </div>
 
@@ -40,7 +53,7 @@ const Card = () => {
 
           <div className="space-y-1 relative">
             <p className="">Amount in <span className="font-bold">BNB</span> You Pay:</p>
-            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] p-2 pr-10" />
+            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem]  p-2 pr-10" />
             <hr className="absolute rotate-90 right-0 flex items-center pr-7 mr-7 border-t-0.5  border-gray-300" style={{ bottom: '19px' }} />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pt-6">
               <Image src={usd} alt="Image" className="h-5 w-5" width={500} height={500} />
@@ -48,7 +61,7 @@ const Card = () => {
           </div>
           <div className="space-y-1 relative">
             <p className="">Amount in <span className="font-bold">BOO</span> You Receive:</p>
-            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] p-2 pr-10" />
+            <input type="text" name="" id="" className="rounded-xl h-10 lg:w-96 w-[20.2rem] text-black p-2 pr-10" />
             <hr className="absolute rotate-90 right-0 flex items-center pr-7 mr-7 border-t-0.5  border-gray-300" style={{ bottom: '19px' }} />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pt-6">
               <Image src={logo} alt="Image" className="h-5 w-5" width={500} height={500} />
