@@ -58,16 +58,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 // Define interface for button props
-interface ButtonProps {
-  // imageUrl?: string;
-  width: number;
-  height: number;
-  bgColor: string;
-  onClick?: () => void;
-  children?: React.ReactNode;
-}
 
-const Button: React.FC<ButtonProps> = ({ width, height, bgColor, onClick, children }) => {
+
+const Button = ({ width, height, bgColor, onClick, children }) => {
   return (
     <button
       onClick={onClick}
