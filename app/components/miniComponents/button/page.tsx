@@ -60,11 +60,10 @@ import React from 'react';
 
 import { ButtonProps } from '@/app/utils/type';
 
-export default function Button  ({ text, onClick }:ButtonProps) {
+export default function Button  ({ text }:ButtonProps) {
   return (
     <button
 
-      onClick={onClick}
     >
       {text}
     </button>
