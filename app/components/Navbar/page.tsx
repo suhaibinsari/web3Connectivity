@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
         Click Me
       </Button> */}
 
-<Button text="Click me!" onClick={() => console.log("Button clicked!")} />
+<Button text="Click me!"  />
 
         </div>
         <div className="md:hidden">
