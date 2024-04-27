@@ -67,15 +67,16 @@ const Navbar: React.FC = () => {
         </div>
         <div className='hidden md:block'>
           {/* <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" /> */}
-          <Button
+          {/* <Button
         // imageUrl={wallet}
         width={170}
         height={50}
         bgColor="#007bff"
       >
         Click Me
-      </Button>
+      </Button> */}
 
+<Button text="Click me!" onClick={() => console.log("Button clicked!")} className="my-custom-class" />
 
         </div>
         <div className="md:hidden">
