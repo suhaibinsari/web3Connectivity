@@ -60,15 +60,16 @@ import React from 'react';
 
 import { btnProps } from '@/app/utils/type';
 
-export default function Button  ({ text }:btnProps) {
+const Button: React.FC<btnProps> = ({ text }) => {
   return (
     <button
-
+      type="button"
+      
     >
       {text}
     </button>
   );
 };
 
-
+export default Button;
 
