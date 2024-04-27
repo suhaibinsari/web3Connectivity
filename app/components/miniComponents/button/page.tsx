@@ -63,10 +63,7 @@ import { ButtonProps } from '@/app/utils/type';
 export default function Button  ({ text, onClick }:ButtonProps) {
   return (
     <button
-      type="button"
-      style={{
-        margin: '10px', // Wrap '10px' in quotes to make it a string
-      }}
+
       onClick={onClick}
     >
       {text}
