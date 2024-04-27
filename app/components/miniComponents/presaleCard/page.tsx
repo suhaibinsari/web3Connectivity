@@ -9,11 +9,11 @@ import logo from '../../../../public/logo.png'
 
 
 import { useEffect, useState, useCallback } from "react";
-import Button from '../Button/Button';
-// import Countdown from '../countDown/page';
+import Button from '../button/Button';
+import Countdown from '../countDown/Countdown';
 
 const Card = () => {
-  // const targetDate = new Date('2024-12-31T23:59:59');
+  const targetDate = new Date('2024-12-31T23:59:59');
 
   return (
     <>
@@ -34,7 +34,7 @@ const Card = () => {
           </progress>
 
           <p>Phase 1 Ends In:</p>
-          {/* <p><Countdown targetDate={targetDate} /></p> */}
+          <p><Countdown targetDate={targetDate} /></p>
           <div className='text-center'>
             <p>USD Raised = $0.0 / $500000</p>
             <p>Minimum purchase = 5000 INCO</p>
@@ -71,7 +71,7 @@ const Card = () => {
 
 
           <div className='flex gap-6'>
-            {/* <Button img={wallet} text="Connect Wallet" backgroundColor="#D94A2C" width="200px" height="50px" /> */}
+            <Button img={wallet} text="Connect Wallet" backgroundColor="#D94A2C" width="200px" height="50px" />
           </div>
 
         </div>
