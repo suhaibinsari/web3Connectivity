@@ -59,7 +59,7 @@ import Link from 'next/link';
 
 // Define interface for button props
 interface ButtonProps {
-  imageUrl: string;
+  imageUrl?: string;
   width: number;
   height: number;
   bgColor: string;
