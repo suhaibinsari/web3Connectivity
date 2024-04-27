@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Image from 'next/image';
 import bnb from '../../../../public/bnb.png'
 import usd from '../../../../public/usdt.png'
 import wallet from '../../../../public/wallet-2-svgrepo-com.svg'
@@ -8,8 +9,7 @@ import logo from '../../../../public/logo.png'
 
 
 import { useEffect, useState, useCallback } from "react";
-// import Button from '../button/page';
-import Image from 'next/image';
+import Button from '../Button/Button';
 // import Countdown from '../countDown/page';
 
 const Card = () => {
@@ -42,8 +42,8 @@ const Card = () => {
             <p>Listing price: TBD</p>
           </div>
           <div className='flex gap-6'>
-            {/* <Button img={bnb} text="BNB" backgroundColor="#F3B43B" /> */}
-            {/* <Button img={usd} text="USDT" backgroundColor="#26A17B" /> */}
+            <Button img={bnb} text="BNB" backgroundColor="#F3B43B" />
+            <Button img={usd} text="USDT" backgroundColor="#26A17B" />
           </div>
 
           {/* <div className='space-y-1'>

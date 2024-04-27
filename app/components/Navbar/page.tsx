@@ -67,17 +67,6 @@ const Navbar: React.FC = () => {
         </div>
         <div className='hidden md:block'>
           <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" />
-          {/* <Button
-        // imageUrl={wallet}
-        width={170}
-        height={50}
-        bgColor="#007bff"
-      >
-        Click Me
-      </Button> */}
-
-{/* <Button text="Click me!"  /> */}
-
         </div>
         <div className="md:hidden">
           <motion.button
