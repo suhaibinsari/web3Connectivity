@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi'; // Import the burger and close icons
-import Button from '../miniComponents/button/page';
+// import Button from '../miniComponents/button/page';
 import Image from 'next/image';
 
 import logo from '../../../public/logo.png'
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className='hidden md:block'>
-          <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" />
+          {/* <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" /> */}
         </div>
         <div className="md:hidden">
           <motion.button
