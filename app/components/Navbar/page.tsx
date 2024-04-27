@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className='hidden md:block'>
-          {/* <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" /> */}
+          <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" />
           {/* <Button
         // imageUrl={wallet}
         width={170}
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
         Click Me
       </Button> */}
 
-<Button text="Click me!"  />
+{/* <Button text="Click me!"  /> */}
 
         </div>
         <div className="md:hidden">
