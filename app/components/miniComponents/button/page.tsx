@@ -7,14 +7,11 @@ interface ButtonProps {
   text?: string;
   children?: React.ReactNode;
   img?: string | StaticImageData ;
-  width?: string | number;
-  height?: string | number;
   backgroundColor?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
-  width = 'auto',
-  height = 'auto',
+
   backgroundColor = 'gray',
   onClick,
   text,
@@ -33,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
       <button
         className="text-white font-bold py-2 px-4 rounded-xl flex items-center justify-center gap-2"
-        style={{ width, height, backgroundColor }}
+        style={{ backgroundColor }}
         onClick={onClick}
       >
         {buttonContent}

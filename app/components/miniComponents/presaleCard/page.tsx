@@ -42,8 +42,8 @@ const Card = () => {
             <p>Listing price: TBD</p>
           </div>
           <div className='flex gap-6'>
-            <Button img={bnb} text="BNB" backgroundColor="#F3B43B" width="150px" height="50px" />
-            <Button img={usd} text="USDT" backgroundColor="#26A17B" width="150px" height="50px" />
+            <Button img={bnb} text="BNB" backgroundColor="#F3B43B" />
+            <Button img={usd} text="USDT" backgroundColor="#26A17B" />
           </div>
 
           {/* <div className='space-y-1'>
