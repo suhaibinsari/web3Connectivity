@@ -58,9 +58,9 @@ import Link from 'next/link';
 
 import React from 'react';
 
-import { ButtonProps } from '@/app/utils/type';
+import { btnProps } from '@/app/utils/type';
 
-export default function Button  ({ text }:ButtonProps) {
+export default function Button  ({ text }:btnProps) {
   return (
     <button
 
