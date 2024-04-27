@@ -10,3 +10,8 @@ export interface ButtonProps {
     height?: string | number;
     backgroundColor?: string;
   }
+
+
+export interface CountdownProps {
+    targetDate: Date;
+}

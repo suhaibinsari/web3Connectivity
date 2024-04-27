@@ -34,7 +34,7 @@ const Card = () => {
           </progress>
 
           <p>Phase 1 Ends In:</p>
-          <p><Countdown targetDate={targetDate} /></p>
+          <Countdown targetDate={targetDate} />
           <div className='text-center'>
             <p>USD Raised = $0.0 / $500000</p>
             <p>Minimum purchase = 5000 INCO</p>
