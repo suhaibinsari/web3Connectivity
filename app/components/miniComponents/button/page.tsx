@@ -52,17 +52,13 @@
 
 
 
-import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Define interface for button props
+import React from 'react';
 
-interface ButtonProps {
-  text: string;
-  onClick: () => void;
-}
+import { ButtonProps } from '@/app/utils/type';
 
 const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
   return (
