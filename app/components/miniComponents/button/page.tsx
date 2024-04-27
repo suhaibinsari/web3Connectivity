@@ -59,7 +59,7 @@ import Link from 'next/link';
 
 // Define interface for button props
 interface ButtonProps {
-  imageUrl?: string;
+  // imageUrl?: string;
   width: number;
   height: number;
   bgColor: string;
@@ -67,7 +67,7 @@ interface ButtonProps {
   children?: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ imageUrl, width, height, bgColor, onClick, children }) => {
+const Button: React.FC<ButtonProps> = ({ width, height, bgColor, onClick, children }) => {
   return (
     <button
       onClick={onClick}
@@ -84,7 +84,7 @@ const Button: React.FC<ButtonProps> = ({ imageUrl, width, height, bgColor, onCli
         padding: '5px',
       }}
     >
-      <Image src={imageUrl} alt="Button Icon" style={{ width: '80%', height: '80%' }} />
+      {/* <Image src={imageUrl} alt="Button Icon" style={{ width: '80%', height: '80%' }} /> */}
       {children}
     </button>
   );
