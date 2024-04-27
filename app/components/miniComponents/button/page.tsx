@@ -60,7 +60,7 @@ import React from 'react';
 
 import { ButtonProps } from '@/app/utils/type';
 
-const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
+export default function Button  ({ text, onClick }:ButtonProps) {
   return (
     <button
       type="button"
@@ -74,4 +74,5 @@ const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
   );
 };
 
-export default Button;
+
+
