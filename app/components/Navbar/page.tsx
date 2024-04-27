@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi'; // Import the burger and close icons
-import Button from '../miniComponents/Button/page';
+import Button from '../miniComponents/Button/Button';
 import Image from 'next/image';
 
 import logo from '../../../public/logo.png'
