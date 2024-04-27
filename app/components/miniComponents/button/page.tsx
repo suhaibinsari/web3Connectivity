@@ -47,12 +47,47 @@
 // export default Button;
 
 
-import React from 'react'
+// components/Button.tsx
 
-export default function page() {
-  return (
-    <div>
-      aaa
-    </div>
-  )
+
+
+
+import React from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+// Define interface for button props
+interface ButtonProps {
+  imageUrl: string;
+  width: number;
+  height: number;
+  bgColor: string;
+  onClick?: () => void;
+  children?: React.ReactNode;
 }
+
+const Button: React.FC<ButtonProps> = ({ imageUrl, width, height, bgColor, onClick, children }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        width: `${width}px`,
+        height: `${height}px`,
+        backgroundColor: bgColor,
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '5px',
+      }}
+    >
+      <Image src={imageUrl} alt="Button Icon" style={{ width: '80%', height: '80%' }} />
+      {children}
+    </button>
+  );
+};
+
+export default Button;
