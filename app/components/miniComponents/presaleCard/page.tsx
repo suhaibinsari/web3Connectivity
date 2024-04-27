@@ -20,19 +20,7 @@ const Card = () => {
       <div className='border bg-gray-400 flex flex-col items-center justify-center font-Crafty bg-opacity-25 rounded-3xl w-full max-w-[30rem] py-10'>
         <div className='flex flex-col items-center justify-center space-y-4'>
           <h2 className='text-3xl font-bold'>BOO COIN</h2>
-
-
-
-          <progress
-            id="file"
-            style={{
-              width: "99.71%",
-              marginTop: "1px",
-              marginLeft: "1px",
-            }}
-          >
-          </progress>
-
+          <progress className="progress w-60 text-black h-6" value="70" max="100"></progress>
           <p>Phase 1 Ends In:</p>
           <Countdown targetDate={targetDate} />
           <div className='text-center'>

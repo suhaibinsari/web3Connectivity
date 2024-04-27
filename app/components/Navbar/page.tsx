@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <nav className="bg-gray-400 font-Crafty bg-opacity-25 backdrop-filter backdrop-blur-lg rounded-b-3xl w-auto p-4 relative">
+    <nav className="bg-gray-400 font-Crafty bg-opacity-25 backdrop-filter rounded-b-3xl w-auto p-4 relative">
       <div className="container mx-auto flex justify-between text-white items-center">
         <div>
           <Link href="/">
@@ -87,12 +87,17 @@ const Navbar: React.FC = () => {
         />
       )}
       <motion.div
-        className={`${isOpen ? 'block' : 'hidden'} md:hidden fixed top-0 left-0 bg-gray-800 w-3/4 h-full z-50 menu-container`}
+        className={`${isOpen ? 'block' : 'hidden'} md:hidden fixed flex flex-col items-center justify-center top-0  left-0 rounded-r-3xl  bg-gray-800 w-3/4 h-full z-50 menu-container`}
         initial={{ x: '-100%' }}
         animate={{ x: isOpen ? 0 : '-100%' }}
         transition={{ type: 'spring', stiffness: 200, damping: 20 }}
       >
-        <ul className="flex flex-col space-y-2 mt-2 p-4">
+        <ul className="flex flex-col items-center justify-center space-y-5 mt-2 p-4">
+          <li>
+            <Link href="/">
+              <Image src={logo} width={60} height={60} alt='no-img' />
+            </Link>
+          </li>
           <li>
             <Link href="/">
               <motion.button
@@ -133,7 +138,7 @@ const Navbar: React.FC = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Button
+                <Button text='Connect Wallet' width="200px" height="50px" backgroundColor="#D94A2C" img={wallet} link="https://www.google.com/" />
               </motion.button>
             </Link>
           </li>

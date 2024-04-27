@@ -12,3 +12,9 @@ body {
     background-repeat: no-repeat;
     font-family: 'Griffy', sans-serif;
   }
+
+
+  .progress.with-text {
+    /* Your custom styles here */
+    color: black; /* Example text color */
+}
