@@ -10,10 +10,10 @@ import logo from '../../../../public/logo.png'
 import { useEffect, useState, useCallback } from "react";
 // import Button from '../button/page';
 import Image from 'next/image';
-import Countdown from '../countDown/page';
+// import Countdown from '../countDown/page';
 
 const Card = () => {
-  const targetDate = new Date('2024-12-31T23:59:59');
+  // const targetDate = new Date('2024-12-31T23:59:59');
 
   return (
     <>
@@ -34,7 +34,7 @@ const Card = () => {
           </progress>
 
           <p>Phase 1 Ends In:</p>
-          <p><Countdown targetDate={targetDate} /></p>
+          {/* <p><Countdown targetDate={targetDate} /></p> */}
           <div className='text-center'>
             <p>USD Raised = $0.0 / $500000</p>
             <p>Minimum purchase = 5000 INCO</p>
